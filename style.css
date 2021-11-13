@@ -1,0 +1,142 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&display=swap');
+:root{
+    --borderradius: 10px;
+    --left: 8%;
+    --darkblue: hsl(217, 19%, 35%);
+    --pblue: hsl(214, 17%, 51%);
+    --grayishblue: hsl(212, 23%, 69%);
+    --lightblue: hsl(210, 46%, 95%);
+    --bgcolor: hsl(210, 21%, 73%);
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: "Manrope";
+    background-color: var(--bgcolor);
+}
+.card{
+    width: 1000px;
+    height: 370px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    display: grid;
+    grid-template-columns: 400px 600px;
+    grid-template-areas: "i t";
+    background-color: white;
+    border-radius: var(--borderradius);
+}
+.left_card{
+    grid-area: i;
+    overflow: hidden;
+    border-radius: 10px 0 0 10px;
+}
+#img1{
+    width: 500px;
+    border-radius: 10px 0 0 10px;
+}
+.right_card{
+    grid-area: t;
+}
+.title{
+    color: var(--darkblue);
+    font-size: 1.7em;
+    width: 500px;
+    position: relative;
+    top: 9%;
+    left: var(--left);
+}
+.par{
+    color: var(--pblue);
+    font-weight: 500;
+    font-size: 1.1em;
+    width: 500px;
+    position: relative;
+    left: var(--left);
+    top: 15%;
+
+}
+.profile{
+    display: flex;
+    position: relative;
+    left: var(--left);
+    top: 23%;
+}
+#img2{
+    width: 55px;
+    height: 55px;
+    border-radius: 50%;
+}
+.info{
+    position: relative;
+    left: 4%;
+    margin-top: 7px;
+}
+.name{
+    font-size: 1em;
+    color: var(--darkblue);
+}
+.date{
+    font-size: 1em;
+    color: var(--grayishblue);
+}
+.share{
+    width: 45px;
+    height: 45px;
+    background-color: var(--bgcolor);
+    border-radius: 50%;
+    text-align: center;
+    position: relative;
+    left: 80%;
+    top: 10%;
+}
+#icon_share{
+    position: relative;
+    top: 28%;
+    width: 20px;
+}
+.popup{
+    position: relative;
+    z-index: 99;
+    width: 310px;
+    height: 60px;
+    background-color: var(--darkblue);
+    display: flex;
+    justify-content: center;
+    justify-content: space-evenly;
+    line-height: 60px;
+    border-radius: 7px;
+    position: relative;
+    left: 58%;
+    top: -30%;
+}
+.share_title{
+    color: var(--grayishblue);
+    font-weight: 200;
+    font-size: 1em;
+    letter-spacing: 6px;
+    margin-left: 1.9em;
+}
+.icons{
+    display: flex;
+    width: 150px;
+    justify-content: center;
+    justify-content: space-evenly;
+}
+.social_icon{
+    width: 22px;
+    height: 22px;
+    margin-top: 1.1em;
+}
+.triangle {
+    width: 0; 
+    height: 0; 
+    border-left: 19px solid transparent;
+    border-right: 19px solid transparent;
+    border-top: 20px solid var(--darkblue);
+    position: absolute;
+    top: 90%;
+  }
